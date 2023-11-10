@@ -17,20 +17,29 @@
         <form>
             <fieldset>
                 <div>
-                    <label>Nome</label>
-                    <input type="text"/>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required/>
                 </div>
                 <div>
-                    <label>Sobrenome</label>
-                    <input type="text"/>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" required/>
                 </div>
                 <div>
-                    <label>Email</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">Email</label>
+                    <input type="email" size="30" name="email" id="email" required>
                 </div>
                 <div>
-                    <label>Telefone</label>
-                    <input type="tel" name="tel" id="tel">
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" maxlength="14" name="telefone" id="tel" placeholder="(00)00000-0000" required>
+                </div>
+                <div>
+                    <label for="cargo">Escolha o cargo desejado:</label><br><br>
+                    <input type="radio" id="cargo1" name="cargo" value="desenvolvedor">desenvolvedor <br>
+                    <input type="checkbox" id="cargo2" name="cargo" value="designer">designer <br><br>
+                </div>
+                <div>
+                    <label for="mensagem">mensagem</label> <br><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
                 </div>
             </fieldset>
             <h2>Respostas</h2>
@@ -42,6 +51,10 @@
                 <div>
                     <label>Confirmar informações</label>
                     <input type="submit">
+                </div>
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
                 </div>
             </fieldset>
         </form>
